@@ -1,0 +1,33 @@
+footer {
+  background-color: #353535;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 20px;
+
+  section {
+
+    .svg {
+      fill: white;
+    }
+
+    nav {
+      margin-top: 15px;
+      display: flex;
+      flex-direction: column;
+
+      i {
+        font-size: x-small;
+        width: 20px;
+      }
+
+      .fa-utensils {
+        font-size: 12px;
+      }
+
+      a {
+        color: white;
+        line-height: 25px;
+      }
+    }
+  }
+}

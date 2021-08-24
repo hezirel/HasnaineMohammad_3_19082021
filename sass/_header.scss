@@ -1,0 +1,14 @@
+header {
+  box-sizing: border-box;
+  height: fit-content;
+  @include center(center, center);
+  padding-top: 10px;
+  position: relative;
+  box-shadow: $shadow-1;
+
+  img {
+    width: clamp(10px, 45%, 300px);
+    margin: 10px 0 15px 0;
+
+  }
+}
