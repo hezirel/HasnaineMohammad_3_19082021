@@ -141,3 +141,62 @@ footer section nav a {
   line-height: 25px;
 }
 
+#localisation {
+  background-color: #EAEAEA;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#localisation .localisation_content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#localisation .localisation_content i {
+  position: relative;
+  left: -20px;
+}
+
+#explorer {
+  background-color: #F6F6F6;
+  height: 285px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 30px 0 50px 0;
+}
+#explorer h2 {
+  width: 70%;
+}
+#explorer p {
+  width: 90%;
+  color: #777777;
+  font-size: larger;
+}
+
+button {
+  width: clamp(10px, 60%, 250px);
+  border: none;
+  margin-top: 20px;
+  padding: 15px 0px 15px 0px;
+  border-radius: 50px;
+  font-size: large;
+  transition: 0.5s;
+  background: linear-gradient(to right, #FF79DA 0%, #9356DC 51%, #99E2D0 100%);
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0px 5px 8px rgba(175, 175, 175, 0.6);
+}
+button:hover {
+  background-position: right center;
+  box-shadow: 0px 8px 12px rgba(99, 99, 99, 0.6);
+}
+
+.sections {
+  box-sizing: border-box;
+  padding: 45px 20px;
+}
