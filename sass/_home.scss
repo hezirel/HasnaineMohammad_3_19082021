@@ -149,10 +149,11 @@ button {
     grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 10px;
+    margin-top: 30px;
 
     @media screen and(min-width:426px) {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
       grid-gap: 15px;
     }
 
@@ -165,7 +166,6 @@ button {
 
       @media screen and(min-width:426px) {
         height: 20rem;
-        width: 20rem;
         margin: auto;
       }
 
