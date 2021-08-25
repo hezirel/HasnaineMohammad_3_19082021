@@ -218,155 +218,96 @@ button {
           width: 100vw;
           height: 30vh;
           object-fit: cover;
+
           @media screen and(min-width:426px) {
+            height: 50vh;
             position: absolute;
             top: 0;
             left: 0;
             width: 150%;
           }
-        }
-
-        #img_1 {
-
-          @media screen and(min-width:426px) {
-            top: -20px;
-          }
 
           @media screen and(min-width:769px) {
-            top: 0;
-            left: -30%;
-            height: 120%;
-            width: auto;
-          }
-        }
-
-        #img_2 {
-          object-position: 0px -150px;
-
-          @media screen and(min-width:426px) {
-            width: 130%;
-            top: -40px;
-            left: -50px;
-          }
-
-          @media screen and(min-width:769px) {
-            left: -30%;
-            top: -20%;
-            left: -10%;
-          }
-        }
-
-        #img_3 {
-          object-position: 0px -60px;
-
-          @media screen and(min-width:426px) {
-            width: 140%;
-            top: -10px;
-            left: -45px;
-          }
-
-          @media screen and(min-width:769px) {
-            top: -5%;
-            left: -13%;
-            height: 120%;
-            width: auto;
-          }
-        }
-
-        #img_4 {
-          object-position: 0px -50px;
-
-          @media screen and(min-width:426px) {
-            width: 130%;
-            top: 0px;
-            left: -45px;
-          }
-
-          @media screen and(min-width:769px) {
-            left: -13%;
-            height: auto;
-            width: 140%;
+            height: 70vh;
           }
         }
       }
+        .card_bottom {
+          height: 75px;
+          @include center(space-between, center);
+          box-sizing: border-box;
+          padding: 15px 15px;
 
-
-      .card_bottom {
-        height: 75px;
-        @include center(space-between, center);
-        box-sizing: border-box;
-        padding: 15px 15px;
-
-        @media screen and(min-width:600px) {
-          height: 25%;
-        }
-
-        .card_description {
-          height: 100%;
-
-          h3 {
-            margin-bottom: 5px;
-          }
-        }
-
-        .like {
-
-          i {
-            color: $color-secondary;
-            font-size: 25px;
-            width: 30px;
+          @media screen and(min-width:600px) {
+            height: 25%;
           }
 
-          .like_btns {
-            display: none;
+          .card_description {
+            height: 100%;
+
+            h3 {
+              margin-bottom: 5px;
+            }
           }
 
-          #like_btn1:checked+label #logo_fill {
-            transform: scale(1);
-          }
+          .like {
 
-          #like_btn1:checked+label #logo_base {
-            animation: giggle 0.3s ease-out alternate-reverse 2;
-          }
+            i {
+              color: $color-secondary;
+              font-size: 25px;
+              width: 30px;
+            }
 
-          #like_btn2:checked+label #logo_fill {
-            transform: scale(1);
-          }
+            .like_btns {
+              display: none;
+            }
 
-          #like_btn2:checked+label #logo_base {
-            animation: giggle 0.3s ease-out alternate-reverse 2;
-          }
+            #like_btn1:checked+label #logo_fill {
+              transform: scale(1);
+            }
 
-          #like_btn3:checked+label #logo_fill {
-            transform: scale(1);
-          }
+            #like_btn1:checked+label #logo_base {
+              animation: giggle 0.3s ease-out alternate-reverse 2;
+            }
 
-          #like_btn3:checked+label #logo_base {
-            animation: giggle 0.3s ease-out alternate-reverse 2;
-          }
+            #like_btn2:checked+label #logo_fill {
+              transform: scale(1);
+            }
 
-          #like_btn4:checked+label #logo_fill {
-            transform: scale(1);
-          }
+            #like_btn2:checked+label #logo_base {
+              animation: giggle 0.3s ease-out alternate-reverse 2;
+            }
 
-          #like_btn4:checked+label #logo_base {
-            animation: giggle 0.3s ease-out alternate-reverse 2;
-          }
+            #like_btn3:checked+label #logo_fill {
+              transform: scale(1);
+            }
 
-          label {
-            position: relative;
-          }
+            #like_btn3:checked+label #logo_base {
+              animation: giggle 0.3s ease-out alternate-reverse 2;
+            }
 
-          #logo_fill {
-            position: absolute;
-            left: 0;
-            color: $color-secondary;
-            transform: scale(0);
-            transform-origin: 50% 100%;
-            transition: 0.6s;
+            #like_btn4:checked+label #logo_fill {
+              transform: scale(1);
+            }
+
+            #like_btn4:checked+label #logo_base {
+              animation: giggle 0.3s ease-out alternate-reverse 2;
+            }
+
+            label {
+              position: relative;
+            }
+
+            #logo_fill {
+              position: absolute;
+              left: 0;
+              color: $color-secondary;
+              transform: scale(0);
+              transform-origin: 50% 100%;
+              transition: 0.6s;
+            }
           }
         }
       }
     }
   }
-}

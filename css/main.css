@@ -357,75 +357,16 @@ button:hover {
 }
 @media screen and (min-width: 426px) {
   #restaurant .cards .card .card_img img {
+    height: 50vh;
     position: absolute;
     top: 0;
     left: 0;
     width: 150%;
   }
 }
-@media screen and (min-width: 426px) {
-  #restaurant .cards .card .card_img #img_1 {
-    top: -20px;
-  }
-}
 @media screen and (min-width: 769px) {
-  #restaurant .cards .card .card_img #img_1 {
-    top: 0;
-    left: -30%;
-    height: 120%;
-    width: auto;
-  }
-}
-#restaurant .cards .card .card_img #img_2 {
-  object-position: 0px -150px;
-}
-@media screen and (min-width: 426px) {
-  #restaurant .cards .card .card_img #img_2 {
-    width: 130%;
-    top: -40px;
-    left: -50px;
-  }
-}
-@media screen and (min-width: 769px) {
-  #restaurant .cards .card .card_img #img_2 {
-    left: -30%;
-    top: -20%;
-    left: -10%;
-  }
-}
-#restaurant .cards .card .card_img #img_3 {
-  object-position: 0px -60px;
-}
-@media screen and (min-width: 426px) {
-  #restaurant .cards .card .card_img #img_3 {
-    width: 140%;
-    top: -10px;
-    left: -45px;
-  }
-}
-@media screen and (min-width: 769px) {
-  #restaurant .cards .card .card_img #img_3 {
-    top: -5%;
-    left: -13%;
-    height: 120%;
-    width: auto;
-  }
-}
-#restaurant .cards .card .card_img #img_4 {
-  object-position: 0px -50px;
-}
-@media screen and (min-width: 426px) {
-  #restaurant .cards .card .card_img #img_4 {
-    width: 130%;
-    top: 0px;
-    left: -45px;
-  }
-}
-@media screen and (min-width: 769px) {
-  #restaurant .cards .card .card_img #img_4 {
-    left: -13%;
-    height: auto;
-    width: 140%;
+  #restaurant .cards .card .card_img img {
+    height: 70vh;
   }
 }
 #restaurant .cards .card .card_bottom {
