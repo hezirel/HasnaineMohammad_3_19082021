@@ -111,8 +111,8 @@ header {
   box-shadow: 0px 0px 8px rgba(128, 128, 128, 0.6);
 }
 header img {
-  width: clamp(10px, 45%, 300px);
-  margin: 10px 0 15px 0;
+  width: 70vw;
+  margin: 15px;
 }
 
 footer {
@@ -182,9 +182,10 @@ button {
   width: clamp(10px, 60%, 250px);
   border: none;
   margin-top: 20px;
-  padding: 15px 0px 15px 0px;
+  padding: 15px;
   border-radius: 50px;
-  font-size: large;
+  font-size: medium;
+  font-weight: bold;
   transition: 0.5s;
   background: linear-gradient(to right, #FF79DA 0%, #9356DC 51%, #99E2D0 100%);
   background-size: 200% auto;
