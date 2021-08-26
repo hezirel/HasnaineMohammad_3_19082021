@@ -68,16 +68,13 @@ button {
   padding: 1rem;
 
   h2 {
-
-    padding-top: 2rem;
-
     @media screen and(min-width: 426px) {
       text-align: center;
     }
   }
 
   #steps {
-    margin-top: 30px;
+    margin-top: 1rem;
 
     @media screen and(min-width:600px) {
       @include center(center, center);
@@ -222,7 +219,7 @@ button {
           }
 
           @media screen and(min-width:769px) {
-            left: 75%
+            left: 28rem;
           }
 
 
@@ -245,15 +242,13 @@ button {
       }
 
       .card_bottom {
-        height: 75px;
         @include center(space-between, center);
         box-sizing: border-box;
         padding: 15px 15px;
         padding-bottom: 0;
 
         .card_description {
-          height: 100%;
-
+        min-height: 2rem;
           h3 {
             font-size: small;
             margin-bottom: 5px;
