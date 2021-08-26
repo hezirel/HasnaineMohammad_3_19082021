@@ -320,14 +320,13 @@ button:hover {
 }
 @media screen and (min-width: 426px) {
   #restaurant .cards .card {
-    height: 20rem;
+    height: 35vh;
     margin: auto;
   }
 }
 @media screen and (min-width: 769px) {
   #restaurant .cards .card {
     height: 40vh;
-    width: 80%;
     margin: auto;
   }
 }
@@ -374,7 +373,7 @@ button:hover {
 }
 @media screen and (min-width: 769px) {
   #restaurant .cards .card .card_img .new {
-    left: 70%;
+    left: 75%;
   }
 }
 #restaurant .cards .card .card_img img {
@@ -384,13 +383,12 @@ button:hover {
 }
 @media screen and (min-width: 426px) {
   #restaurant .cards .card .card_img img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 50vh;
     width: 100%;
-  }
-}
-@media screen and (min-width: 769px) {
-  #restaurant .cards .card .card_img img {
-    height: 50vh;
   }
 }
 #restaurant .cards .card .card_bottom {
@@ -400,11 +398,7 @@ button:hover {
   align-items: center;
   box-sizing: border-box;
   padding: 15px 15px;
-}
-@media screen and (min-width: 600px) {
-  #restaurant .cards .card .card_bottom {
-    padding-bottom: 0;
-  }
+  padding-bottom: 0;
 }
 #restaurant .cards .card .card_bottom .card_description {
   height: 100%;

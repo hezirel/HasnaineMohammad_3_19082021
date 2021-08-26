@@ -6,6 +6,7 @@
 
   .localisation_content {
     @include center(center, center);
+
     i {
       position: relative;
       left: -20px;
@@ -69,6 +70,7 @@ button {
   h2 {
 
     padding-top: 2rem;
+
     @media screen and(min-width: 426px) {
       text-align: center;
     }
@@ -173,13 +175,12 @@ button {
       margin: 10px;
 
       @media screen and(min-width:426px) {
-        height: 20rem;
+        height: 35vh;
         margin: auto;
       }
 
       @media screen and(min-width:769px) {
         height: 40vh;
-        width: 80%;
         margin: auto;
       }
 
@@ -211,15 +212,17 @@ button {
           left: 60%;
           top: 7%;
           z-index: 100;
+
           @media screen and(min-width:376px) {
             left: 66%;
           }
+
           @media screen and(min-width:426px) {
             left: 68%;
           }
 
           @media screen and(min-width:769px) {
-            left: 70%
+            left: 75%
           }
 
 
@@ -231,95 +234,94 @@ button {
           object-fit: cover;
 
           @media screen and(min-width:426px) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             height: 50vh;
             width: 100%;
           }
-
-          @media screen and(min-width:769px) {
-            height: 50vh;
-          }
         }
       }
-        .card_bottom {
-          height: 75px;
-          @include center(space-between, center);
-          box-sizing: border-box;
-          padding: 15px 15px;
 
-          @media screen and(min-width:600px) {
-            padding-bottom: 0;
+      .card_bottom {
+        height: 75px;
+        @include center(space-between, center);
+        box-sizing: border-box;
+        padding: 15px 15px;
+        padding-bottom: 0;
+
+        .card_description {
+          height: 100%;
+
+          h3 {
+            font-size: small;
+            margin-bottom: 5px;
           }
 
-          .card_description {
-            height: 100%;
+          p {
+            font-size: smaller;
+          }
+        }
 
-            h3 {
-              font-size: small;
-              margin-bottom: 5px;
-            }
-            p {
-              font-size: smaller;
-            }
+        .like {
+
+          i {
+            color: $color-secondary;
+            font-size: 25px;
+            width: 30px;
           }
 
-          .like {
+          .like_btns {
+            display: none;
+          }
 
-            i {
-              color: $color-secondary;
-              font-size: 25px;
-              width: 30px;
-            }
+          #like_btn1:checked+label #logo_fill {
+            transform: scale(1);
+          }
 
-            .like_btns {
-              display: none;
-            }
+          #like_btn1:checked+label #logo_base {
+            animation: giggle 0.3s ease-out alternate-reverse 2;
+          }
 
-            #like_btn1:checked+label #logo_fill {
-              transform: scale(1);
-            }
+          #like_btn2:checked+label #logo_fill {
+            transform: scale(1);
+          }
 
-            #like_btn1:checked+label #logo_base {
-              animation: giggle 0.3s ease-out alternate-reverse 2;
-            }
+          #like_btn2:checked+label #logo_base {
+            animation: giggle 0.3s ease-out alternate-reverse 2;
+          }
 
-            #like_btn2:checked+label #logo_fill {
-              transform: scale(1);
-            }
+          #like_btn3:checked+label #logo_fill {
+            transform: scale(1);
+          }
 
-            #like_btn2:checked+label #logo_base {
-              animation: giggle 0.3s ease-out alternate-reverse 2;
-            }
+          #like_btn3:checked+label #logo_base {
+            animation: giggle 0.3s ease-out alternate-reverse 2;
+          }
 
-            #like_btn3:checked+label #logo_fill {
-              transform: scale(1);
-            }
+          #like_btn4:checked+label #logo_fill {
+            transform: scale(1);
+          }
 
-            #like_btn3:checked+label #logo_base {
-              animation: giggle 0.3s ease-out alternate-reverse 2;
-            }
+          #like_btn4:checked+label #logo_base {
+            animation: giggle 0.3s ease-out alternate-reverse 2;
+          }
 
-            #like_btn4:checked+label #logo_fill {
-              transform: scale(1);
-            }
+          label {
+            position: relative;
+          }
 
-            #like_btn4:checked+label #logo_base {
-              animation: giggle 0.3s ease-out alternate-reverse 2;
-            }
-
-            label {
-              position: relative;
-            }
-
-            #logo_fill {
-              position: absolute;
-              left: 0;
-              color: $color-secondary;
-              transform: scale(0);
-              transform-origin: 50% 100%;
-              transition: 0.6s;
-            }
+          #logo_fill {
+            position: absolute;
+            left: 0;
+            color: $color-secondary;
+            transform: scale(0);
+            transform-origin: 50% 100%;
+            transition: 0.6s;
           }
         }
       }
     }
   }
+}
