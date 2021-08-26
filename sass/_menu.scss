@@ -16,6 +16,9 @@ main {
   }
 
   img {
+    width: 100%;
+    object-fit: cover;
+    max-height: 40vh;
     @media screen and(min-width:600px) {
       width: 100%;
       position: relative;
@@ -249,6 +252,7 @@ main {
 
       button {
         margin: 0;
+        font-family: "roboto";
       }
     }
   }

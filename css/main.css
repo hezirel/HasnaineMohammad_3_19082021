@@ -3,13 +3,12 @@ h1,
 h2,
 h3,
 h4,
-h5,
-p {
+h5 {
+  font-family: "Shrikhand", cursive;
   margin: 0;
 }
 
 h1 {
-  font-family: "Shrikhand", cursive;
   font-size: 1.7rem;
 }
 
@@ -22,11 +21,16 @@ a {
   color: black;
 }
 
-/*fonts*/
-* {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+p {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
 }
 
+b {
+  font-family: "Roboto", sans-serif;
+}
+
+/*fonts*/
 .overlay {
   position: fixed;
   height: 100%;
@@ -448,6 +452,11 @@ main {
     margin-bottom: -120px;
   }
 }
+main img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 40vh;
+}
 @media screen and (min-width: 600px) {
   main img {
     width: 100%;
@@ -662,6 +671,7 @@ main .menu .command_btn {
 }
 main .menu .command_btn button {
   margin: 0;
+  font-family: "roboto";
 }
 
 /*# sourceMappingURL=main.css.map */
