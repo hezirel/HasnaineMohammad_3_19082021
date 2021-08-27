@@ -147,7 +147,7 @@ main {
           height: 100%;
           border-radius: 10px;
           animation: RiseUp 1s ease backwards;
-          animation-delay: calc(var(--order)* 300ms);
+          animation-delay: calc(var(--order)*300ms);
           overflow-x: hidden;
           display: flex;
           justify-content: space-between;
