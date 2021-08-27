@@ -547,7 +547,6 @@ main .menu .menu_content .menu_top .like #logo_base2:hover {
 }
 main .menu .menu_content .menu_top .like #logo_base2:hover + #logo_fill2 {
   background: -webkit-linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: riseUp 0.5s;
@@ -592,7 +591,7 @@ main .menu .menu_content .menu_elements .card {
   height: 100%;
   border-radius: 10px;
   animation: RiseUp 1s ease backwards;
-  animation-delay: calc(var(--order)* 300ms);
+  animation-delay: calc(var(--order)*300ms);
   overflow-x: hidden;
   display: flex;
   justify-content: space-between;
