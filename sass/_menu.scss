@@ -48,6 +48,8 @@ main {
       .menu_top {
         @include center(space-between, center);
         margin-top: 10px;
+        display: flex;
+        flex: 1;
 
         .restaurant_name {
           @media screen and(min-width:600px) {
@@ -57,6 +59,7 @@ main {
         }
 
         .like {
+          position:relative;
 
           i {
             color: $color-secondary;
@@ -64,29 +67,37 @@ main {
             width: 40px;
           }
 
-          .like_btns {
-            display: none;
-          }
-
-          #like_btn:checked+label #logo_fill {
-            transform: scaleY(1) scaleX(1);
-          }
-
-          #like_btn:checked+label #logo_base {
-            animation: giggle 0.3s ease-out alternate-reverse 2;
-          }
-
-          label {
-            position: relative;
-          }
-
-          #logo_fill {
+          #logo_base2, #logo_fill2{
+            color:black;
             position: absolute;
-            left: 0;
-            color: $color-secondary;
-            transform: scaleY(0) scaleX(0);
-            transform-origin: 30% 20%;
-            transition: 0.6s;
+            right:1em;
+            top:-0.5em;
+          }
+
+          #logo_fill2 {
+            color:transparent;
+          }
+
+          #logo_base2 {
+            z-index: 1;
+          }
+
+          #logo_base2:hover {
+            color:transparent;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+          }
+
+          #logo_base2:hover + #logo_fill2 {
+            background: -webkit-linear-gradient($color-primary, $color-secondary);
+            background-clip:text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation:riseUp 0.5s;
+            -webkit-animation:riseUp 0.5s;
           }
         }
       }

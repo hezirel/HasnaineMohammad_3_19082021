@@ -60,14 +60,20 @@ b {
   animation: loading 1.1s ease infinite;
 }
 
-@keyframes RiseUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
+@keyframes riseUp {
+  0% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+  100% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
   }
 }
 @keyframes rotate {
@@ -407,15 +413,36 @@ button:hover {
   font-size: smaller;
   padding-bottom: 0.5rem;
 }
-#restaurant .cards .card .card_bottom .like span {
-  color: black;
-  font-size: 25px;
-  width: 30px;
-  fill: white;
+#restaurant .cards .card .card_bottom .like {
+  position: relative;
 }
-#restaurant .cards .card .card_bottom .like span:hover {
-  color: #FF79DA;
-  background-color: blue;
+#restaurant .cards .card .card_bottom .like #logo_base2,
+#restaurant .cards .card .card_bottom .like #logo_fill2 {
+  color: black;
+  position: absolute;
+  left: -1em;
+  top: -0.5em;
+}
+#restaurant .cards .card .card_bottom .like #logo_fill2 {
+  color: transparent;
+}
+#restaurant .cards .card .card_bottom .like #logo_base2 {
+  z-index: 1;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+#restaurant .cards .card .card_bottom .like #logo_base2:hover {
+  color: transparent;
+}
+#restaurant .cards .card .card_bottom .like #logo_base2:hover + #logo_fill2 {
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: riseUp 0.5s;
 }
 
 .menu_header i {
@@ -471,6 +498,8 @@ main .menu .menu_content .menu_top {
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
+  display: flex;
+  flex: 1;
 }
 @media screen and (min-width: 600px) {
   main .menu .menu_content .menu_top .restaurant_name {
@@ -478,30 +507,41 @@ main .menu .menu_content .menu_top {
     width: 100%;
   }
 }
+main .menu .menu_content .menu_top .like {
+  position: relative;
+}
 main .menu .menu_content .menu_top .like i {
   color: #FF79DA;
   font-size: 25px;
   width: 40px;
 }
-main .menu .menu_content .menu_top .like .like_btns {
-  display: none;
-}
-main .menu .menu_content .menu_top .like #like_btn:checked + label #logo_fill {
-  transform: scaleY(1) scaleX(1);
-}
-main .menu .menu_content .menu_top .like #like_btn:checked + label #logo_base {
-  animation: giggle 0.3s ease-out alternate-reverse 2;
-}
-main .menu .menu_content .menu_top .like label {
-  position: relative;
-}
-main .menu .menu_content .menu_top .like #logo_fill {
+main .menu .menu_content .menu_top .like #logo_base2, main .menu .menu_content .menu_top .like #logo_fill2 {
+  color: black;
   position: absolute;
-  left: 0;
-  color: #FF79DA;
-  transform: scaleY(0) scaleX(0);
-  transform-origin: 30% 20%;
-  transition: 0.6s;
+  right: 1em;
+  top: -0.5em;
+}
+main .menu .menu_content .menu_top .like #logo_fill2 {
+  color: transparent;
+}
+main .menu .menu_content .menu_top .like #logo_base2 {
+  z-index: 1;
+}
+main .menu .menu_content .menu_top .like #logo_base2:hover {
+  color: transparent;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+main .menu .menu_content .menu_top .like #logo_base2:hover + #logo_fill2 {
+  background: -webkit-linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: riseUp 0.5s;
+  -webkit-animation: riseUp 0.5s;
 }
 main .menu .menu_content .menu_title {
   margin-top: 40px;

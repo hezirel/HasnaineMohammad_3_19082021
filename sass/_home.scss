@@ -262,18 +262,40 @@ button {
         }
 
         .like {
+          position: relative;
 
-          span {
+          #logo_base2,
+          #logo_fill2 {
             color: black;
-            font-size: 25px;
-            width: 30px;
-            fill: white;
-          }
-          span:hover {
-            color: $color-secondary;
-            background-color:blue;
+            position: absolute;
+            left: -1em;
+            top: -0.5em;
           }
 
+          #logo_fill2 {
+            color: transparent;
+          }
+
+          #logo_base2 {
+            z-index: 1;
+            transition: 0.5s;
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+          }
+
+          #logo_base2:hover {
+            color: transparent;
+          }
+
+          #logo_base2:hover+#logo_fill2 {
+            background: -webkit-linear-gradient($color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: riseUp 0.5s;
+          }
         }
       }
     }
