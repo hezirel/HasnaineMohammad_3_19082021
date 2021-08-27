@@ -292,7 +292,6 @@ button {
           .logo_base2:hover+.logo_fill2 {
             background: -webkit-linear-gradient($color-primary, $color-secondary);
             background-clip: text;
-            -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: riseUp 0.5s;
           }
