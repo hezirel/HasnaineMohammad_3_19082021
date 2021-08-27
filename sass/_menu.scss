@@ -48,11 +48,10 @@ main {
       .menu_top {
         @include center(space-between, center);
         margin-top: 10px;
-        display: flex;
-        flex: 1;
-
         .restaurant_name {
-          @media screen and(min-width:600px) {
+          flex-wrap: wrap;
+          flex-grow: 1;
+          @media screen and(min-width:426px) {
             text-align: center;
             width: 100%;
           }
@@ -60,11 +59,17 @@ main {
 
         .like {
           position:relative;
+          padding-left: 1rem;
+          @media screen and(max-width:426px) {
+            padding-left: 3rem;
+            
+          }
 
           i {
             color: $color-secondary;
             font-size: 25px;
             width: 40px;
+            margin-left: 20px;
           }
 
           #logo_base2, #logo_fill2{

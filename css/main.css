@@ -498,10 +498,12 @@ main .menu .menu_content .menu_top {
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
-  display: flex;
-  flex: 1;
 }
-@media screen and (min-width: 600px) {
+main .menu .menu_content .menu_top .restaurant_name {
+  flex-wrap: wrap;
+  flex-grow: 1;
+}
+@media screen and (min-width: 426px) {
   main .menu .menu_content .menu_top .restaurant_name {
     text-align: center;
     width: 100%;
@@ -509,11 +511,18 @@ main .menu .menu_content .menu_top {
 }
 main .menu .menu_content .menu_top .like {
   position: relative;
+  padding-left: 1rem;
+}
+@media screen and (max-width: 426px) {
+  main .menu .menu_content .menu_top .like {
+    padding-left: 3rem;
+  }
 }
 main .menu .menu_content .menu_top .like i {
   color: #FF79DA;
   font-size: 25px;
   width: 40px;
+  margin-left: 20px;
 }
 main .menu .menu_content .menu_top .like #logo_base2, main .menu .menu_content .menu_top .like #logo_fill2 {
   color: black;
