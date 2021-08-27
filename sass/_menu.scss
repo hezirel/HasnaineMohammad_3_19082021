@@ -52,6 +52,7 @@ main {
           flex-wrap: wrap;
           flex-grow: 1;
           flex-shrink: 1;
+          margin: 1rem;
           @media screen and(min-width:426px) {
             text-align: center;
             width: 100%;
@@ -61,7 +62,7 @@ main {
         .like {
           position:relative;
           padding-left: 1rem;
-          @media screen and(max-width:426px) {
+          @media screen and(max-width:425px) {
             padding-left: 3rem;
             
           }

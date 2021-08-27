@@ -503,6 +503,7 @@ main .menu .menu_content .menu_top .restaurant_name {
   flex-wrap: wrap;
   flex-grow: 1;
   flex-shrink: 1;
+  margin: 1rem;
 }
 @media screen and (min-width: 426px) {
   main .menu .menu_content .menu_top .restaurant_name {
@@ -514,7 +515,7 @@ main .menu .menu_content .menu_top .like {
   position: relative;
   padding-left: 1rem;
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 425px) {
   main .menu .menu_content .menu_top .like {
     padding-left: 3rem;
   }
